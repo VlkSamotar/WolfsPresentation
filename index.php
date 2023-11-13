@@ -25,7 +25,7 @@ $aktualDate = $date->format("Y");
     <header>
         <nav>
             <ul>
-                <li><a href="http://microsite.vlksamotar.wz.cz/">Microsite</a></li>
+                <li><a href="http://microsite.vlk-samotar.cz/" target="_blank">Microsite</a></li>
                 <li><a href="">Lorem.</a></li>
                 <li><a href="">In?</a></li>
                 <li><a href="">Pariatur.</a></li>

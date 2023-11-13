@@ -1,4 +1,8 @@
 # cele domeny (aliasy)
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^vlksamotar.wz.cz
+RewriteRule ^(.*) http://vlk-samotar.cz/$1 [L,R=301]
+
 RewriteCond %{REQUEST_URI} !^domains/
 RewriteCond %{REQUEST_URI} !^/domains/
 RewriteCond %{HTTP_HOST} ^(www\.)?(.*)$
