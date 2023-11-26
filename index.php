@@ -16,7 +16,7 @@ $aktualDate = $date->format("Y");
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/queryes.css">
-    <link rel="shortcut icon" href="./img/Vlk.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/Wolf.ico" type="image/x-icon">
 
     <title>Vlkovy projekty</title>
 </head>
