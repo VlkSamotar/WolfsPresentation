@@ -40,10 +40,10 @@ $aktualDate = $date->format("Y");
         <nav>
             <ul>
                 <li><a href="http://microsite.vlk-samotar.cz/" target="_blank">Microsite</a></li>
-                <li><a href="">Lorem.</a></li>
-                <li><a href="">In?</a></li>
-                <li><a href="">Pariatur.</a></li>
-                <li><a href="">Accusamus.</a></li>
+                <li><a href="">Eshop</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Hry</a></li>
+                <li><a href="">Grafika</a></li>
             </ul>
         </nav>
     </header>
