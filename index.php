@@ -1,5 +1,7 @@
 <?php
 
+require "classes/Url.php";
+
 session_start();
 
 $date = new DateTime();
@@ -13,6 +15,18 @@ $aktualDate = $date->format("Y");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="Vlkovy projekty" />
+    <meta name="description"
+        content="Jsem kutil a nadšenec do technologií. Podívejte se na mé projekty." />
+
+    <meta property="og:title" content="Vlkovy projekty">
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Jsem kutil a nadšenec do technologií. Podívejte se na mé projekty.">
+    <meta property="og:image" content="<?= Url::getBaseUrl() . '/img/baseSocialView.png' ?>">
+    <meta property="og:url" content="<?= Url::getFullUrl() ?>">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/queryes.css">
