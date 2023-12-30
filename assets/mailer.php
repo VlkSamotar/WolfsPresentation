@@ -12,13 +12,15 @@ $name = Validate::validation($_POST["name"]);
 $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
 $phone = filter_var(trim($_POST["phone"]), FILTER_SANITIZE_NUMBER_INT);
 $message = trim($_POST["message"]);
-$response = strtolower(trim($_POST["response"]));
-$index = $_POST["index"];
+$question = strtolower(trim($_POST["question"]));
+$line = $_POST["line"];
+$questions = Validate::$questions;
+$answers = Validate::$answers;
 
 // Checking data or redirect to error addres
 if (empty($name) or empty($message) or !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $_SESSION["success"] = "Jejda, něco se pokazilo.";
-    Url::redirectUrl("");
+    Url::redirectUrl("/wolfsPresentation");
     exit;
 }
 
@@ -29,7 +31,7 @@ if(isset($_SESSION["name"]) && isset($_SESSION["email"]) && isset($_SESSION["pho
     $_SESSION["message"] = "";
 }
 
-if(Validate::compare($response, $index, Validate::$questions, Validate::$answers)){  
+if(Validate::compare($question, $line, $questions, $answers)){  
     // Set your email
     $recipient = "spravce@vlksamotar.cz";
 
@@ -50,12 +52,14 @@ if(Validate::compare($response, $index, Validate::$questions, Validate::$answers
 
     // Redirect to some address, if everything is all right
     $_SESSION["success"] = "Odeslání proběhlo úspěšně.";
-    Url::redirectUrl(""); 
+    Url::redirectUrl("/wolfsPresentation"); 
 }else{
     $_SESSION["name"] = $name;
     $_SESSION["email"] = $email;
     $_SESSION["phone"] = $phone;
     $_SESSION["message"] = $message;
+
+    $_SESSION["success"] = "Zkus to ještě jednou";
 
     Url::redirectUrl("/wolfsPresentation");
 }

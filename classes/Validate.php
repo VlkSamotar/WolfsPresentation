@@ -2,8 +2,8 @@
 
     class Validate{
 
-        public static $questions = ["Napiš slovy, kolik má velbloud dvouhrbý hrbů?", "Napiš slovy, kolik má opice hlav?"];
-        public static $answers = ["dva", "jednu"];
+        public static $questions = ["Kolik hrbů má velbloud dvouhrbý?", "Kolik očí má kočka?"];
+        public static $answers = ["dva", "dvě"];
 
         public static function random($questions, $answers){           
             $index = 0;
@@ -16,11 +16,12 @@
         }
 
         public static function compare($response, $index, $questions, $answers){
+            
             if(sizeof($questions) == sizeof($answers) && $index < sizeof($questions)){
                 return $response == $answers[$index];
-            }else{
-                return false;
             }
+
+            return false;            
         }
 
         public static function validation($string){
