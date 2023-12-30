@@ -1,6 +1,62 @@
+
 @mixin displayFlex($direction: row){
     display: flex;
     flex-direction: $direction;
     align-items: center;
     justify-content: center;
+}
+
+@mixin formular(){
+    form {
+        @include displayFlex(column);
+
+        input,
+        textarea {
+            display: block;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 15px;
+            outline: none;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        textarea {
+            width: 350px;
+            height: 50px;
+        }
+
+        textarea {
+            height: 250px;
+            font-size: 22px;
+        }
+
+        input[type="submit"] {
+            width: 100px;
+            height: 60px;
+            color: $textColor;
+            font-weight: bolder;
+            font-size: 20px;            
+            background: $primaryColor;            
+
+            &:hover {
+                transition: 0.5s;               
+                background: $textColor;
+                color: $secondaryColor;               
+            }
+        }
+
+        label{
+            color: $textColor;
+            display: block;
+            font-size: 25px;            
+            width: 250px;
+            margin-bottom: 5px;
+        }
+
+    }
 }

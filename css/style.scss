@@ -69,13 +69,26 @@ main{
         padding-top: 60px;
     }
     
-    .sectionHeader{
+    .mainHeader{
         font-size: 120px;
+        color: $textColor;
+    }
+
+    .sectionHeader{
+        font-size: 80px;
+        color: $textColor;
+        margin-bottom: 20px;
+    }
+
+    .underHeader{
+        font-size: 60px;
         color: $textColor;
     }
     
     .introduction{
         text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
 
         p{
             font-size: 20px;
@@ -107,6 +120,12 @@ main{
             }            
             
         }
+    }
+
+    .contact{                      
+        margin-top: 40px;
+        text-align: center;
+        @include formular();
     }
 }
 

@@ -67,7 +67,7 @@ $question = $questions[$line];
     <main>
         <div class="container">
             <section class="introduction">
-                <h1 class="sectionHeader">Vlk samotář</h1>
+                <h1 class="mainHeader">Vlk samotář</h1>
                 <p>Vítejte na jednom z Vlkových webů. Tento konkrétně slouží jako ukázka aplikace technologií, které
                     používám. Převážně, protože zde používám
                     hosting na Linuxových serverech, se jedná o PHP, JavaScript, HTML/CSS, SCSS, WordPress a podobně.
@@ -77,6 +77,7 @@ $question = $questions[$line];
             </section>
 
             <section class="contact">
+                <h1 class="sectionHeader">Napište mi...</h1>
                 <form action="assets/mailer.php" method="post">
                     <input type="text" name="name" placeholder="Jméno a příjmení" value="<?= htmlspecialchars($name) ?>"
                         required>
@@ -86,7 +87,8 @@ $question = $questions[$line];
                         required>
                     <textarea name="message" placeholder="Moje zpráva"
                         required><?= htmlspecialchars($message) ?></textarea>
-                    <input type="text" name="question" placeholder="<?= $question ?>" required>                    
+                    <label for="controlQuestion">Odpověz slovy...</label>
+                    <input type="text" name="question" id="controlQuestion" placeholder="<?= $question ?>" required>                    
                     <input type="hidden" name="line" value="<?= $line ?>">
                     <input type="submit" value="Odeslat">
                 </form>
