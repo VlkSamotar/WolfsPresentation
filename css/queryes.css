@@ -1,1 +1,29 @@
-/*# sourceMappingURL=queryes.css.map */
+@media (max-width: 435px) {
+  .mainHeader {
+    font-size: 90px !important;
+  }
+  .sectionHeader {
+    font-size: 60px !important;
+  }
+}
+@media (max-width: 370px) {
+  .mainHeader {
+    font-size: 80px !important;
+  }
+  nav {
+    height: 130px !important;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  .container {
+    padding-top: 140px !important;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  input[type=number],
+  textarea {
+    width: 280px !important;
+  }
+}/*# sourceMappingURL=queryes.css.map */
