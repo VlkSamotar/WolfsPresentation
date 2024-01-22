@@ -5,6 +5,11 @@
   .sectionHeader {
     font-size: 60px !important;
   }
+  .blogLink {
+    font-size: 35px !important;
+    padding: 14px !important;
+    min-width: 260px !important;
+  }
 }
 @media (max-width: 370px) {
   .mainHeader {
