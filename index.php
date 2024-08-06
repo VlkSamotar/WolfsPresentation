@@ -74,10 +74,8 @@ $question = $questions[$line];
     <header>
         <nav>
             <ul>
-                <li><a href="http://microsite.vlk-samotar.cz/" target="_blank">Microsite</a></li>
-                <li><a href="">Eshop</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Hry</a></li>
+                <li><a href="https://microsite.vlk-samotar.cz/" target="_blank">Microsite</a></li>
+                <li><a href="https://orderingsystem.vlk-samotar.cz/" target="_blank">Sklad</a></li>
             </ul>
         </nav>
     </header>

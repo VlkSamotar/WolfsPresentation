@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTP_USER_AGENT} !(BlackBerry)
+RewriteCond %{HTTP_USER_AGENT} !(Windows\sNT\s5\.[12])
+RewriteCond %{HTTP_HOST} ^(www\.)?sub.domena.tld
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L]
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteEngine on
+RewriteRule ^(\w+)$ ./download.php?id=$1
