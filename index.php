@@ -73,10 +73,12 @@ $question = $questions[$line];
 
     <header>
         <nav>
-            <ul>
-                <li><a href="https://microsite.vlk-samotar.cz/" target="_blank">Microsite</a></li>
-                <li><a href="https://orderingsystem.vlk-samotar.cz/" target="_blank">Sklad</a></li>
-            </ul>
+            <div class="logoDiv">
+                <a href="/">
+                    <img src="./img/VlkLogo.png" alt="Logo">
+                    <span><strong>Vlk</strong> samotář</span>
+                </a>
+            </div>
         </nav>
     </header>
     <main>

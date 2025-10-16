@@ -9,12 +9,9 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  z-index: 100;
-  position: fixed;
   width: 100%;
-  height: 50px;
+  height: 90px;
   background: rgb(223, 216, 216);
-  border-bottom: 1px solid rgb(120, 115, 115);
 }
 nav ul {
   display: flex;
@@ -45,6 +42,27 @@ nav ul li a.active {
   pointer-events: none;
   color: rgb(101, 95, 95);
 }
+nav .logoDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+nav .logoDiv a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 50px;
+  color: black;
+}
+nav .logoDiv a img {
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+}
 
 main {
   min-height: 100vh;
@@ -58,7 +76,7 @@ main .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 5px;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 main .mainHeader {
   font-size: 120px;

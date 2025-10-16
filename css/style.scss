@@ -12,12 +12,9 @@
 // Header
 nav{
     @include displayFlex();
-    z-index: 100;
-    position: fixed;
     width: 100%;
-    height: 50px;
+    height: 90px;
     background: $primaryColor;
-    border-bottom: 1px solid $terciaryColor;
 
     ul{
         @include displayFlex();
@@ -52,6 +49,25 @@ nav{
             }
         }
     }
+
+    .logoDiv{
+        @include displayFlex();
+        cursor: pointer;
+
+        a{
+            @include displayFlex();
+            text-decoration: none;
+            font-size: 50px;
+            color: $textColor;
+            
+            img{
+                width: 60px;
+                height: 60px;
+                margin-right: 5px;
+            }
+
+        }
+    }
 }
 
 // Main
@@ -67,7 +83,7 @@ main{
         max-width: 800px;
         margin: 0 auto;
         padding: 5px;
-        padding-top: 60px;
+        padding-top: 20px;
     }
     
     .mainHeader{
